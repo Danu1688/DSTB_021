@@ -1,14 +1,14 @@
 proxies:
-- name: danu01_LiveCtn21
+- name: danu01_VisionCtn21
   type: trojan
-  server: beacon.liveon.id
+  server: sg-ctn.sshpremium.my.id
   port: 443
   password: d1030ea7-170a-46a2-8e50-6c571023ea69
   udp: true
-  sni: sg-ctn.sshpremium.my.id
+  sni: sb.scorecardresearch.com
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: "/trojanws"
     headers:
-      Host: sg-ctn.sshpremium.my.id
+      Host: sb.scorecardresearch.com
