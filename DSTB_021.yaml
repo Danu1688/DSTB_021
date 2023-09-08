@@ -1,4 +1,17 @@
 proxies:
+- name: DanuDstbSvr1_LiveDO_1
+  type: trojan
+  server: 104.21.8.121
+  port: 443
+  password: 8043a1f2-43be-4e9c-b493-e3afdec54da8
+  udp: true
+  sni: danu529.foryou-ssh.my.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan-ws
+    headers:
+      Host: danu529.foryou-ssh.my.id
 - name: TrojanWsSvr-Live_1
   type: trojan
   server: 104.18.1.196
